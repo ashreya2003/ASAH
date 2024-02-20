@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+  text-decoration: none;
+ 
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#nav {
+  height: 145px;
+  width: 100%;
+  display: flex;
+ 
+  align-items: center;
+  padding: 0 150px;
+  gap: 50px;
+  position: fixed;
+  justify-content: flex-start;
+  z-index: 99;
+  font-weight: 400%;
+
+  
+  
+}
+
+#nav img {
+  height: 4.5vw;
+  border-radius: 50%;
+}
+
+#nav h4 {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #0D9276;
+}
+
+#overlay-content {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.5; /* Adjust opacity as needed */
+}
+
+.overlay {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1; /* Ensure overlay content appears above video */
+}
+
+.overlay h1,
+.overlay h2,
+.overlay h3 {
+  margin: 0;
+  color: #0d9276;
+}
+
+.overlay h1 {
+  font-size: 40px;
+}
+
+.overlay .join-now {
+  background-color: #fff6e9;
+  text-align: center;
+  border-radius: 20px; /* Adjust the value as needed to achieve the desired oval shape */
+  width: 150px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  line-height: 50px; /* Center text vertically */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition effect */
+  display: inline-block; /* Ensure the button respects its content width */
+}
+
+.overlay .join-now:hover {
+  background-color:#40A2E3; /* Change color on hover */
+  
+}
+
+
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px;
+  background: linear-gradient(to bottom, #40A2E3, #0D9276);
+  color:  #FFF6E9; /* Text color */
+  height: 100vh; /* Set height to fill the entire viewport height */
+}
+.animation-container {
+  width: 300px; /* Set the width of the animation container */
+  height: 300px; /* Set the height of the animation container */
+  margin: auto; /* Center the container horizontally */
+  margin-top: 50px; /* Add some top margin */
+}
+
+
+.image-container {
+  flex: 1;
+}
+
+.content-container {
+  flex: 2;
+  padding-left: 50px; /* Adjust as needed for spacing */
+}
+
+.about-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+
+.mtt-container {
+  background: linear-gradient(to bottom, #FFF6E9, #40A2E3 );
+  color: #0D9276;
+  padding: 20px;
+  height: 100vh;
+}
+
+.logos-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.logo1 {
+  width: 150px; /* Adjust size as needed */
+  height: 150px; /* Ensure width and height are equal for a perfect circle */
+  border-radius: 50%; /* Make the image circular */
+  overflow: hidden; /* Ensure the image stays within the circular shape */
+}
+
+.members-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.member {
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black; /* Example border style */
+  border-radius: 10px; /* Example border radius */
+  font-size: 20px;
+  
+}
+
+.team {
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.link {
+  height: 40px;
+  width: 50px;
+  margin-right: 250px; /* Add margin to create gap */
+  border: 1px solid black; /* Add border */
+  border-radius: 10px; /* Add border radius */
+}
+
+.link2 {
+  height: 40px;
+  width: 50px;
+  justify-content: flex-end; /* Align to the right */
+  border: 1px solid black; /* Add border */
+  border-radius: 10px; /* Add border radius */
+}
+footer {
+  background:#0D9276;
+  padding: 10px;
+  text-align: center;
+}
+.contact {
+  padding: 50px;
+  background-color: #f9f9f9; /* Adjust background color as needed */
+  display: flex;
+  align-items: center;
+}
+
+.contact img {
+  width: 40px; /* Adjust icon size as needed */
+  margin-right: 20px; /* Adjust spacing between icon and heading */
+}
+
+.contact h1 {
+  font-size: 24px;
+  margin: 0; /* Remove default margin */
+  color: #333; /* Adjust text color as needed */
+  text-decoration: none;
+}

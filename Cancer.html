@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infectious Diseases</title>
+  <link rel="stylesheet" href="cancer.css"> <!-- Add your CSS file here -->
+</head>
+
+<body>
+  <header>
+    
+    <div>
+     <h1><center>Cancer</h1></center> 
+      <div class="dropdown">
+        <button class="dropbtn">Types</button>
+        <div class="dropdown-content">
+          <a href="#lung">Lung Cancer</a>
+          <a href="#breast">Breast Cancer</a>
+          <a href="#colorectal">Colorectal Cancer</a>
+          <a href="#prostate">Prostate Cancer</a>
+          <a href="#cervical">Cervical Cancer</a>
+        </div>
+      </div>
+     
+      
+      
+    
+      
+    </div>
+  </header>
+  <main>
+    <section class="chatbox">
+      <section class="chat-window">
+        <article class="msg-container msg-remote" id="msg-0">
+          <div class="msg-box">
+            <img class="user-img" id="user-0" src="//gravatar.com/avatar/00034587632094500000000000000000?d=retro" />
+            <div class="flr">
+              <div class="messages">
+                <p class="msg" id="msg-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius, neque non tristique
+                  tincidunt, mauris nunc efficitur erat, elementum semper justo odio id nisi.
+                </p>
+              </div>
+              <span class="timestamp"><span class="username">Name</span>&bull;<span class="posttime">3 minutes
+                  ago</span></span>
+            </div>
+          </div>
+        </article>
+        <article class="msg-container msg-self" id="msg-0">
+          <div class="msg-box">
+            <div class="flr">
+              <div class="messages">
+                <p class="msg" id="msg-1">
+                  Lorem ipsum dolor sit amet
+                </p>
+                <p class="msg" id="msg-2">
+                  Praesent varius
+                </p>
+              </div>
+              <span class="timestamp"><span class="username">Name</span>&bull;<span class="posttime">2 minutes
+                  ago</span></span>
+            </div>
+            <img class="user-img" id="user-0" src="//gravatar.com/avatar/56234674574535734573000000000001?d=retro" />
+          </div>
+        </article>
+        <article class="msg-container msg-remote" id="msg-0">
+          <div class="msg-box">
+            <img class="user-img" id="user-0" src="//gravatar.com/avatar/002464562345234523523568978962?d=retro" />
+            <div class="flr">
+              <div class="messages">
+                <p class="msg" id="msg-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+              <span class="timestamp"><span class="username">Name</span>&bull;<span class="posttime">1 minute
+                  ago</span></span>
+            </div>
+          </div>
+        </article>
+        <article class="msg-container msg-remote" id="msg-0">
+          <div class="msg-box">
+            <img class="user-img" id="user-0" src="//gravatar.com/avatar/00034587632094500000000000000000?d=retro" />
+            <div class="flr">
+              <div class="messages">
+                <p class="msg" id="msg-0">
+                  Lorem ipsum dolor sit amet.
+                </p>
+              </div>
+              <span class="timestamp"><span class="username">Name</span>&bull;<span class="posttime">Now</span></span>
+            </div>
+          </div>
+        </article>
+        <article class="msg-container msg-self" id="msg-0">
+          <div class="msg-box">
+            <div class="flr">
+              <div class="messages">
+                <p class="msg" id="msg-1">
+                  Lorem ipsum
+                </p>
+              </div>
+              <span class="timestamp"><span class="username">Name</span>&bull;<span class="posttime">Now</span></span>
+            </div>
+            <img class="user-img" id="user-0" src="//gravatar.com/avatar/56234674574535734573000000000001?d=retro" />
+          </div>
+        </article>
+      </section>
+      <form class="chat-input" onsubmit="return false;">
+        <input type="text" autocomplete="on" placeholder="Type a message" />
+        <button>
+          <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+            <path fill="rgba(0,0,0,.38)"
+              d="M17,12L12,17V14H8V10H12V7L17,12M21,16.5C21,16.88 20.79,17.21 20.47,17.38L12.57,21.82C12.41,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L3.53,17.38C3.21,17.21 3,16.88 3,16.5V7.5C3,7.12 3.21,6.79 3.53,6.62L11.43,2.18C11.59,2.06 11.79,2 12,2C12.21,2 12.41,2.06 12.57,2.18L20.47,6.62C20.79,6.79 21,7.12 21,7.5V16.5M12,4.15L5,8.09V15.91L12,19.85L19,15.91V8.09L12,4.15Z" />
+          </svg>
+        </button>
+      </form>
+     </section>
+    <!-- Add more sections or content as needed -->
+  </main>
+  <style>
+    /* Style for article section */
+    #article-section {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #40A2E3;
+        color: #fff;
+    }
+
+    .article {
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        background-color: #f9f9f9;
+    }
+
+    .article h3 {
+        margin-top: 0;
+        color: #0D9276;
+    }
+
+    .article p {
+        margin-bottom: 0;
+        color: #1e3544;
+    }
+
+    /* Form styles */
+    #article-form {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    #article-form label {
+        display: block;
+        margin-bottom: 10px;
+        color: #40A2E3;
+    }
+
+    #article-form input[type="text"],
+    #article-form input[type="email"],
+    #article-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    #article-form input[type="submit"] {
+        background-color: #40A2E3;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    #article-form input[type="submit"]:hover {
+        background-color: #0D9276;
+    }
+</style>
+</head>
+<body>
+<div id="page1">
+<h1>ABOUT</h1>
+<center>
+    <h2>Cancer is a broad term used to describe a group of diseases characterized by the uncontrolled growth and spread of abnormal cells in the body. <br>
+         These cells can form tumors or affect the blood and immune system. <br> 
+         Cancer can develop in almost any part of the body and can be caused by various factors, including genetic mutations, <br> environmental factors (such as tobacco use and exposure to radiation), and lifestyle choices (such as diet and physical activity).</h2>
+</center>
+</div>
+<div id="article-section">
+<h2>Articles</h2>
+<div id="articles-container">
+    <!-- Articles will be dynamically added here -->
+</div>
+
+<!-- Add a form for users to submit articles -->
+<h2>Submit Your Article</h2>
+<form id="article-form">
+    <label for="article-name">Name:</label>
+    <input type="text" id="article-name" name="article-name" required><br>
+    <label for="article-email">Email:</label>
+    <input type="email" id="article-email" name="article-email" required><br>
+    <label for="article-title">Title:</label>
+    <input type="text" id="article-title" name="article-title" required><br>
+    <label for="article-content">Content:</label>
+    <textarea id="article-content" name="article-content" rows="4" cols="50" required></textarea><br>
+    <input type="submit" value="Submit">
+</form>
+</div>
+
+<script>
+// Load articles from localStorage on page load
+document.addEventListener("DOMContentLoaded", function() {
+    loadArticles();
+});
+
+// Function to load articles from localStorage
+function loadArticles() {
+    var articles = JSON.parse(localStorage.getItem("articles")) || [];
+    var articlesContainer = document.getElementById("articles-container");
+
+    // Clear existing articles
+    articlesContainer.innerHTML = "";
+
+    // Add articles to the page
+    articles.forEach(function(article) {
+        var articleDiv = document.createElement("div");
+        articleDiv.classList.add("article");
+        articleDiv.innerHTML = "<h3>" + article.title + "</h3><p>By: " + article.name + " (" + article.email + ")<br>" + article.content + "</p>";
+        articlesContainer.appendChild(articleDiv);
+    });
+}
+
+// Function to handle form submission
+document.getElementById("article-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    var name = document.getElementById("article-name").value;
+    var email = document.getElementById("article-email").value;
+    var title = document.getElementById("article-title").value;
+    var content = document.getElementById("article-content").value;
+
+    // Create article object
+    var article = {
+        name: name,
+        email: email,
+        title: title,
+        content: content
+    };
+
+    // Get existing articles from localStorage
+    var articles = JSON.parse(localStorage.getItem("articles")) || [];
+
+    // Add new article to the array
+    articles.push(article);
+
+    // Save updated articles to localStorage
+    localStorage.setItem("articles", JSON.stringify(articles));
+
+    // Load articles again to update the page
+    loadArticles();
+
+    // Clear form inputs
+    document.getElementById("article-form").reset();
+});
+</script>
+  <div id="lung">
+<h1>Lung Cancer</h1>
+
+Lung cancer is a type of cancer that starts in the lungs. It is the leading cause of cancer-related deaths worldwide. There are two main types of lung cancer: non-small cell lung cancer (NSCLC) and small cell lung cancer (SCLC). Symptoms and treatment options vary depending on the type and stage of lung cancer.
+
+<h2>Symptoms of Lung Cancer </h2>
+1.Persistent Cough: A chronic cough that doesn't go away or worsens over time. <br>
+2.Chest Pain: Pain in the chest, shoulder, or back, often worsening with deep breathing or coughing.<br>
+3.Shortness of Breath: Difficulty breathing, wheezing, or hoarseness. <br>
+4.Coughing up Blood: Blood in the sputum (hemoptysis). <br>
+5.Unintended Weight Loss: Loss of appetite and unintentional weight loss. <br>
+6.Fatigue: Persistent tiredness or weakness.   <br>
+7.Recurrent Infections: Such as bronchitis or pneumonia.  <br>
+8.Bone Pain: Pain in the bones, especially in advanced stages when cancer has spread (metastasized).  <br>
+
+<h2>Treatment of Lung Cancer</h2>
+1. Surgery: Surgical removal of the tumor or affected part of the lung.
+2. Chemotherapy: Use of drugs to kill cancer cells or stop them from growing.
+3. Radiation Therapy: High-energy radiation to target and destroy cancer cells.
+4. Immunotherapy: Stimulating the immune system to fight cancer cells.
+5. Targeted Therapy: Drugs that target specific genetic mutations in cancer cells.
+6. Palliative Care: Focuses on providing relief from symptoms and improving the quality of life for patients with advanced lung cancer.
+
+<h2>Prevention of Lung Cancer</h2>
+1. Quit Smoking: Tobacco smoking is the leading cause of lung cancer. Quitting smoking or avoiding tobacco products altogether is the single most effective way to prevent lung cancer.
+2. Avoid Secondhand Smoke: Limit exposure to secondhand smoke from others who smoke.
+3. Avoid Carcinogen: Minimize exposure to known carcinogens such as asbestos, radon, and certain chemicals in the workplace or environment.
+4. Protective Measures: Use protective gear (such as masks and ventilation) if working in environments with potential carcinogens.
+5. Healthy Lifestyle: Maintain a healthy diet rich in fruits and vegetables, exercise regularly, and avoid excessive alcohol consumption to help reduce the risk of lung cancer and improve overall health.
+
+Early detection through screening tests, such as low-dose CT scans, can also help identify lung cancer at an early stage when it's more treatable. It's essential to consult a healthcare professional for personalized advice on prevention, screening, and treatment options for lung cancer.
+<button id="button1"  type="button">Consult a doctor</button>
+    
+  </div>
+ 
+ <div id="breast">
+  <h1>Breast Cancer</h1> <br>
+  <p>
+    Breast cancer symptoms, treatments, and precautions are important aspects of women's health. Here's a comprehensive overview:
+
+<h2>Symptoms:</h2>
+1. **Lump in the breast or underarm**: A hard mass that feels different from surrounding tissue.
+2. **Changes in breast size or shape**: Swelling, shrinkage, or distortion of breast shape.
+3. **Changes in breast skin texture**: Dimpling, puckering, or redness.
+4. **Nipple changes**: Inversion, discharge, or scaling of the nipple.
+5. **Breast pain**: Though not always a symptom of breast cancer, persistent breast pain should be evaluated by a healthcare professional.
+
+<h2>Cure/Treatment Options:</h2>
+1. **Surgery**: Lumpectomy (removal of the tumor and a small margin of surrounding tissue) or mastectomy (removal of the breast tissue).
+2. **Radiation Therapy**: High-energy rays or particles to destroy cancer cells.
+3. **Chemotherapy**: Medications to kill cancer cells, often used before surgery to shrink the tumor or after surgery to kill any remaining cancer cells.
+4. **Hormonal Therapy**: Medications that block hormones that fuel certain types of breast cancer.
+5. **Targeted Therapy**: Drugs that target specific abnormalities within cancer cells.
+6. **Immunotherapy**: Boosts the body's immune system to fight cancer cells.
+
+<h2>Precautions:</h2>
+1. **Regular Breast Self-Exams**: Conduct monthly self-exams to become familiar with how your breasts normally look and feel. Report any changes to your healthcare provider.
+2. **Annual Clinical Breast Exams**: Regular check-ups by a healthcare professional.
+3. **Mammograms**: Regular screening mammograms starting at age 40 or earlier if you have a family history of breast cancer.
+4. **Healthy Lifestyle**: Maintain a healthy weight, exercise regularly, limit alcohol consumption, and avoid smoking.
+5. **Know Your Risk Factors**: Understand your family history and other risk factors for breast cancer.
+6. **Breastfeed if Possible**: Breastfeeding may reduce the risk of breast cancer.
+7. **Genetic Testing**: Consider genetic testing if you have a family history of breast cancer or other risk factors.
+
+Early detection and prompt treatment significantly improve the chances of successful outcomes in breast cancer. It's crucial to stay vigilant about breast health and seek medical attention if any concerning symptoms arise.
+  </p>
+<button id="button1"  type="button">Consult a doctor</button>
+    
+  </div>
+ 
+
+ </div>
+ <div id="colorectal">
+  <h1>Colorectal cancer</h1>
+  Colorectal cancer refers to cancer that starts in the colon or rectum. It's important to be aware of its symptoms, types, and precautions. Here's an overview:
+
+  <h2>Symptoms:</h2>
+  1. Changes in bowel habits: Persistent diarrhea or constipation.
+  2. Blood in stool: Bright red or dark blood in the stool.
+  3. Abdominal discomfort: Cramps, gas, or pain in the abdomen.
+  4. Feeling of incomplete bowel emptying: Even after a bowel movement, feeling like you still need to go.
+  5. Weakness and fatigue: Unexplained tiredness and weakness.
+  6. Unintended weight loss: Losing weight without trying.
+  7. Nausea or vomiting: Especially if accompanied by other symptoms.
+  
+ <h2> Types of Colorectal Cancer:</h2>
+  1. Adenocarcinomas: Most common type, accounting for about 95% of cases. These cancers start in cells that line the inside of the colon and rectum.
+  2. Gastrointestinal stromal tumors (GISTs): Rare type that starts in special cells in the wall of the colon and rectum called the interstitial cells of Cajal.
+  3. Carcinoid tumors: Another rare type that starts in the hormone-producing cells of the intestine.
+  4. Lymphomas: Cancer that begins in immune system cells in the colon or rectum.
+  5. Sarcomas: Rare cancers that start in the muscle or connective tissue in the colon or rectum.
+  
+  <h2> Precautions:</h2>
+  1. Screening: Regular screening for colorectal cancer is crucial, usually starting at age 45 or earlier if there are risk factors.
+  2. Healthy Diet: Eat a diet rich in fruits, vegetables, and whole grains while limiting red and processed meats.
+  3. Regular Exercise: Engage in regular physical activity, as it can reduce the risk of colorectal cancer.
+  4. Limit Alcohol and Tobacco: Reduce alcohol consumption and avoid smoking.
+  5. Maintain a Healthy Weight: Being overweight or obese increases the risk of colorectal cancer.
+  6. Know Your Family History: If you have a family history of colorectal cancer or certain genetic conditions, you may need earlier or more frequent screening.
+  7. Be Aware of Symptoms: Recognize the symptoms of colorectal cancer and seek medical attention if you experience any of them.
+  8. Follow-up with Healthcare Provider: If you have a history of colorectal polyps or inflammatory bowel disease, follow your healthcare provider's recommendations for monitoring and treatment.
+  
+  Early detection through screening, coupled with a healthy lifestyle, can significantly reduce the risk of colorectal cancer and improve outcomes if cancer is detected. Regular screenings are especially important for individuals over 45 years old or those with risk factors.
+<button id="button1"  type="button">Consult a doctor</button>
+    
+  </div>
+ 
+
+ </div>
+ <div id="Prostate">
+  <h1>Prostate Cancer</h1>
+  Prostate cancer is a type of cancer that develops in the prostate gland, which is a part of the male reproductive system. Here's an overview of its symptoms, treatments, and precautions:
+
+  <h2>Symptoms:</h2>
+  1. **Urinary Problems**: Difficulty starting or stopping urination, weak or interrupted urine flow, frequent urination (especially at night), or the sensation of not being able to completely empty the bladder.
+  2. **Blood in Urine or Semen**: Blood may be visible in urine or semen.
+  3. **Erectile Dysfunction**: Difficulty achieving or maintaining an erection.
+  4. **Pelvic Discomfort**: Pain or discomfort in the pelvic area, lower back, hips, or upper thighs.
+  5. **Bone Pain**: Advanced prostate cancer may spread to bones, causing pain, especially in the spine, hips, or ribs.
+  6. **Weight Loss**: Unexplained weight loss and fatigue can occur in advanced stages.
+  
+  <h2>Cure/Treatment Options:</h2>
+  1. **Active Surveillance**: For low-risk prostate cancer, monitoring the cancer's progression without immediate treatment.
+  2. **Surgery**: Removal of the prostate gland (prostatectomy).
+  3. **Radiation Therapy**: High-energy rays to kill cancer cells.
+  4. **Hormone Therapy**: Medications or surgery to block the production or action of male hormones, which can fuel prostate cancer growth.
+  5. **Chemotherapy**: Drugs to kill cancer cells.
+  6. **Immunotherapy**: Stimulates the body's immune system to fight cancer cells.
+  7. **Targeted Therapy**: Drugs that target specific molecules involved in cancer growth.
+  
+  <h2>Precautions:</h2>
+  1. **Regular Screening**: Discuss with your healthcare provider about prostate cancer screening starting at age 50, or earlier if you have risk factors or a family history of prostate cancer.
+  2. **Know Your Risk Factors**: Age, family history, race (African American men are at higher risk), and certain genetic factors can increase the risk of prostate cancer.
+  3. **Maintain a Healthy Lifestyle**: Eat a balanced diet rich in fruits, vegetables, and whole grains. Exercise regularly and maintain a healthy weight.
+  4. **Limit Alcohol Consumption**: Excessive alcohol intake may increase the risk of prostate cancer.
+  5. **Avoid Tobacco**: Smoking has been linked to an increased risk of aggressive prostate cancer.
+  6. **Stay Informed**: Be aware of the symptoms of prostate cancer and promptly consult a healthcare provider if you notice any concerning signs.
+  
+  Early detection and prompt treatment are crucial for managing prostate cancer effectively. Discuss any concerns or symptoms with your healthcare provider, and follow their recommendations for screening and treatment.
+<button id="button1"  type="button">Consult a doctor</button>
+    
+  </div>
+ 
+
+ </div>
+ <div id="cervical">
+  <h1>Cervical Cancer</h1>
+    
+  Cervical cancer is a type of cancer that occurs in the cells of the cervix, which is the lower part of the uterus that connects to the vagina. Here's an overview:
+
+  ### Causes:
+  Cervical cancer is primarily caused by the human papillomavirus (HPV), which is a sexually transmitted infection. However, not all women with HPV will develop cervical cancer, as other factors such as smoking, a weakened immune system, multiple sexual partners, and early sexual activity can increase the risk.
+  
+  ### Symptoms:
+  Early stages of cervical cancer may not cause any symptoms, which is why regular screening is crucial. As the cancer progresses, symptoms may include:
+  1. Abnormal vaginal bleeding, such as bleeding between periods, after intercourse, or after menopause.
+  2. Pelvic pain or pain during intercourse.
+  3. Increased vaginal discharge that may be foul-smelling.
+  4. Painful urination or blood in urine.
+  
+  ### Diagnosis:
+  Cervical cancer is often detected through routine screenings such as a Pap smear or HPV test. If abnormal cells are found, further diagnostic tests may include a colposcopy, biopsy, or imaging tests like MRI or CT scans.
+  
+  ### Treatment:
+  Treatment options for cervical cancer depend on the stage of cancer and may include:
+  1. Surgery: Removal of the cancerous tissue, including procedures like a hysterectomy or cone biopsy.
+  2. Radiation therapy: Using high-energy beams to kill cancer cells.
+  3. Chemotherapy: Medications to kill cancer cells or stop their growth.
+  4. Targeted therapy: Drugs that target specific abnormalities in cancer cells.
+  
+  ### Prevention:
+  1. **HPV Vaccination**: The HPV vaccine can protect against the types of HPV that most commonly cause cervical cancer. It is recommended for both boys and girls starting at age 11 or 12.
+  2. **Regular Screening**: Pap smears and HPV tests can detect abnormal cells early when treatment is most effective. Guidelines for screening frequency vary by age and risk factors.
+  3. **Safe Sex Practices**: Limiting sexual partners and using condoms can reduce the risk of HPV infection.
+  4. **Quit Smoking**: Smoking increases the risk of cervical cancer and can worsen outcomes for those who develop it.
+  5. **Maintain a Healthy Lifestyle**: Eating a balanced diet, exercising regularly, and maintaining a healthy weight may reduce the risk of cervical cancer.
+  
+  Cervical cancer is highly preventable with regular screening and HPV vaccination. Early detection and treatment can significantly improve outcomes, so it's important for women to stay informed about their risk factors and screening recommendations.
+<button id="button1"  type="button">Consult a doctor</button>
+    
+  </div>
+ 
+  
+ </div>
+  <!-- Your existing content -->
+
+    <!-- Back to top button -->
+    <div id="back-to-top">
+      <a href="#nav">Back to Top</a>
+  </div>
+
+  <!-- Your existing scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js" integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js" integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+
+  <style>
+      /* Styling for the back to top button */
+      #back-to-top {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background-color: #0D9276;
+          color: white;
+          padding: 10px 20px;
+          border-radius: 5px;
+          display: none; /* Hide by default */
+          text-decoration: none;
+      }
+  </style>
+
+  <script>
+      // JavaScript to handle back to top functionality
+      const backToTopButton = document.getElementById('back-to-top');
+
+      // Show the button when user scrolls down
+      window.addEventListener('scroll', () => {
+          if (window.pageYOffset > 100) {
+              backToTopButton.style.display = 'block';
+          } else {
+              backToTopButton.style.display = 'none';
+          }
+      });
+
+      // Smooth scrolling when the button is clicked
+      backToTopButton.addEventListener('click', () => {
+          window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+          });
+      });
+  </script>
+
+ <footer>
+  <p>
+    &copy; 2024 ASAH all rights reserved
+  </p>
+</footer>
+ 
+
+ <script src="script.js"></script> 
+
+   <!-- Add your JavaScript file here if needed -->
+</body>
+
+</html>

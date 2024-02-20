@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#nav {
+  height: 145px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 150px;
+  gap: 50px;
+  position: fixed;
+  justify-content: flex-start;
+  z-index: 99;
+  font-weight: 400%;
+  font-size: 18px;
+
+}
+
+#nav img {
+  height: 4.5vw;
+  border-radius: 50%;
+}
+
+#nav h4 {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #0D9276;
+}
+
+
+/* Style the dropdown button */
+.dropbtn {
+  cursor: pointer;
+  color: #0D9276;
+  font-weight: 900;
+  
+
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: black;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown content when hovering over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.7;
+  /* Adjust opacity as needed */
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 8px;
+  /* Ensure overlay content appears above video */
+
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4c4c6a;
+  border-radius: 2px;
+}
+
+.chatbox {
+  width: 700px;
+  height: 400px;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+  height: 100vh;
+  border-radius: 8px;
+  padding: 5px 10px;
+ 
+  
+}
+
+.chat-window {
+  flex: auto;
+  max-height: calc(100% - 60px);
+  background: #ffffff;
+  overflow: auto;
+  padding: 5px 10px;
+ 
+  
+}
+
+.chat-input {
+  flex: 0 0 auto;
+  height: 60px;
+  background: #BBE2EC;
+  border-top: 1px solid #030303;
+  border-bottom:1px solid #030303 ;
+  border-left:1px solid #030303 ;
+  border-right: 0.5px solid #030303;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+  
+  
+}
+
+.chat-input input {
+  height: 59px;
+  line-height: 60px;
+  outline: 0 none;
+  border: none;
+  width: calc(100% - 60px);
+  color: #0D9276;
+  text-indent: 10px;
+  font-size: 12pt;
+  padding: 0;
+  background: #FFF6E9;
+  border-bottom:1px solid #030303 ;
+}
+
+.chat-input button {
+  float: right;
+  outline: 0 none;
+  border: none;
+  background: rgba(255, 255, 255, .25);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  padding: 2px 0 0 0;
+  margin: 10px;
+  transition: all 0.15s ease-in-out;
+}
+
+.chat-input input[good]+button {
+  box-shadow: 0 0 2px rgba(0, 0, 0, .12), 0 2px 4px rgba(0, 0, 0, .24);
+  background: #2671ff;
+}
+
+.chat-input input[good]+button:hover {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.chat-input input[good]+button path {
+  fill: white;
+}
+
+.msg-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+.msg-box {
+  display: flex;
+  background: #5b5e6c;
+  padding: 10px 10px 0 10px;
+  border-radius: 0 6px 6px 0;
+  max-width: 80%;
+  width: auto;
+  float: left;
+  box-shadow: 0 0 2px rgba(0, 0, 0, .12), 0 2px 4px rgba(0, 0, 0, .24);
+}
+
+.user-img {
+  display: inline-block;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background: #2671ff;
+  margin: 0 10px 10px 0;
+}
+
+.flr {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 50px);
+}
+
+.messages {
+  flex: 1 0 auto;
+}
+
+.msg {
+  display: inline-block;
+  font-size: 11pt;
+  line-height: 13pt;
+  color: rgba(255, 255, 255, .7);
+  margin: 0 0 4px 0;
+}
+
+.msg:first-of-type {
+  margin-top: 8px;
+}
+
+.timestamp {
+  color: rgba(0, 0, 0, .38);
+  font-size: 8pt;
+  margin-bottom: 10px;
+}
+
+.username {
+  margin-right: 3px;
+}
+
+.posttime {
+  margin-left: 3px;
+}
+
+.msg-self .msg-box {
+  border-radius: 6px 0 0 6px;
+  background: #2671ff;
+  float: right;
+}
+
+.msg-self .user-img {
+  margin: 0 0 10px 10px;
+}
+
+.msg-self .msg {
+  text-align: right;
+}
+
+.msg-self .timestamp {
+  text-align: right;
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  left: 900px;
+  width: 300px;
+  /* Adjust width as needed */
+  height: 100%;
+  /* Take full height of the parent container */
+  background: linear-gradient(to bottom, #FFFFFF,#0D9276);
+  /* Set the background color */
+  /* Add any other styling you require */
+  z-index: 1;
+  /* Ensure overlay content appears under the blank box */
+  border-radius: 10px;
+}
+
+.overlay2 h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #0D9276;
+}
+
+.overlay2 h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding: 10px; /* Add padding */
+  background-color: #0D9276; /* Background color */
+  border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+.overlay2 h3:last-child {
+  margin-bottom: 0; /* Remove margin bottom for the last h3 element */
+}

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infectious Diseases</title>
+  <link rel="stylesheet" href="infectiousdiseases.css"> <!-- Add your CSS file here -->
+</head>
+
+<body>
+  <header>
+    
+    <div>
+     <h1><center>Infectious Diseases</h1></center> 
+      <div class="dropdown">
+        <button class="dropbtn">Type</button>
+        <div class="dropdown-content">
+          <a href="#corona">COVID-19</a>
+          <a href="#hiv">HIV/AIDS</a>
+          <a href="#tv">Tuberculosis</a>
+          <a href="#flu">Flu</a>
+          <a href="#cold">Colds</a>
+        </div>
+      </div>
+
+    </div>
+  </header>
+  <main>
+    <section class="chatbox">
+      <section class="chat-window">
+        <article class="msg-container msg-remote" id="msg-0">
+          <div class="msg-box">
+            <img class="user-img" id="user-0" src="//gravatar.com/avatar/00034587632094500000000000000000?d=retro" />
+            <div class="flr">
+              <div class="messages">
+                <p class="msg" id="msg-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius, neque non tristique
+                  tincidunt, mauris nunc efficitur erat, elementum semper justo odio id nisi.
+                </p>
+              </div>
+              <span class="timestamp"><span class="username">Name</span>&bull;<span class="posttime">3 minutes
+                  ago</span></span>
+            </div>
+          </div>
+        </article>
+        <article class="msg-container msg-self" id="msg-0">
+          <div class="msg-box">
+            <div class="flr">
+              <div class="messages">
+                <p class="msg" id="msg-1">
+                  Lorem ipsum dolor sit amet
+                </p>
+                <p class="msg" id="msg-2">
+                  Praesent varius
+                </p>
+              </div>
+              <span class="timestamp"><span class="username">Name</span>&bull;<span class="posttime">2 minutes
+                  ago</span></span>
+            </div>
+            <img class="user-img" id="user-0" src="//gravatar.com/avatar/56234674574535734573000000000001?d=retro" />
+          </div>
+        </article>
+        <article class="msg-container msg-remote" id="msg-0">
+          <div class="msg-box">
+            <img class="user-img" id="user-0" src="//gravatar.com/avatar/002464562345234523523568978962?d=retro" />
+            <div class="flr">
+              <div class="messages">
+                <p class="msg" id="msg-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+              <span class="timestamp"><span class="username">Name</span>&bull;<span class="posttime">1 minute
+                  ago</span></span>
+            </div>
+          </div>
+        </article>
+        <article class="msg-container msg-remote" id="msg-0">
+          <div class="msg-box">
+            <img class="user-img" id="user-0" src="//gravatar.com/avatar/00034587632094500000000000000000?d=retro" />
+            <div class="flr">
+              <div class="messages">
+                <p class="msg" id="msg-0">
+                  Lorem ipsum dolor sit amet.
+                </p>
+              </div>
+              <span class="timestamp"><span class="username">Name</span>&bull;<span class="posttime">Now</span></span>
+            </div>
+          </div>
+        </article>
+        <article class="msg-container msg-self" id="msg-0">
+          <div class="msg-box">
+            <div class="flr">
+              <div class="messages">
+                <p class="msg" id="msg-1">
+                  Lorem ipsum
+                </p>
+              </div>
+              <span class="timestamp"><span class="username">Name</span>&bull;<span class="posttime">Now</span></span>
+            </div>
+            <img class="user-img" id="user-0" src="//gravatar.com/avatar/56234674574535734573000000000001?d=retro" />
+          </div>
+        </article>
+      </section>
+      <form class="chat-input" onsubmit="return false;">
+        <input type="text" autocomplete="on" placeholder="Type a message" />
+        <button>
+          <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+            <path fill="rgba(0,0,0,.38)"
+              d="M17,12L12,17V14H8V10H12V7L17,12M21,16.5C21,16.88 20.79,17.21 20.47,17.38L12.57,21.82C12.41,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L3.53,17.38C3.21,17.21 3,16.88 3,16.5V7.5C3,7.12 3.21,6.79 3.53,6.62L11.43,2.18C11.59,2.06 11.79,2 12,2C12.21,2 12.41,2.06 12.57,2.18L20.47,6.62C20.79,6.79 21,7.12 21,7.5V16.5M12,4.15L5,8.09V15.91L12,19.85L19,15.91V8.09L12,4.15Z" />
+          </svg>
+        </button>
+      </form>
+     </section>
+    <!-- Add more sections or content as needed -->
+  </main>
+  <style>
+    /* Style for article section */
+    #article-section {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #40A2E3;
+        color: #fff;
+    }
+
+    .article {
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        background-color: #f9f9f9;
+    }
+
+    .article h3 {
+        margin-top: 0;
+        color: #0D9276;
+    }
+
+    .article p {
+        margin-bottom: 0;
+        color: #1e3544;
+    }
+
+    /* Form styles */
+    #article-form {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    #article-form label {
+        display: block;
+        margin-bottom: 10px;
+        color: #40A2E3;
+    }
+
+    #article-form input[type="text"],
+    #article-form input[type="email"],
+    #article-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    #article-form input[type="submit"] {
+        background-color: #40A2E3;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    #article-form input[type="submit"]:hover {
+        background-color: #0D9276;
+    }
+</style>
+</head>
+<body>
+<div id="page1">
+<h1>ABOUT</h1>
+<center>
+    <h2>Infectious diseases, caused by microorganisms like bacteria, viruses, or parasites,<br>
+        spread through direct contact, air, food, or vectors. <br> Examples include colds, flu, tuberculosis, HIV/AIDS, and COVID-19. <br>
+        Prevention through vaccination, hygiene, and avoiding contact with infected individuals is crucial. <br>
+        Early detection and treatment are key to managing these diseases.</h2>
+</center>
+</div>
+<div id="article-section">
+<h2>Articles</h2>
+<div id="articles-container">
+    <!-- Articles will be dynamically added here -->
+</div>
+
+<!-- Add a form for users to submit articles -->
+<h2>Submit Your Article</h2>
+<form id="article-form">
+    <label for="article-name">Name:</label>
+    <input type="text" id="article-name" name="article-name" required><br>
+    <label for="article-email">Email:</label>
+    <input type="email" id="article-email" name="article-email" required><br>
+    <label for="article-title">Title:</label>
+    <input type="text" id="article-title" name="article-title" required><br>
+    <label for="article-content">Content:</label>
+    <textarea id="article-content" name="article-content" rows="4" cols="50" required></textarea><br>
+    <input type="submit" value="Submit">
+</form>
+</div>
+
+<script>
+// Load articles from localStorage on page load
+document.addEventListener("DOMContentLoaded", function() {
+    loadArticles();
+});
+
+// Function to load articles from localStorage
+function loadArticles() {
+    var articles = JSON.parse(localStorage.getItem("articles")) || [];
+    var articlesContainer = document.getElementById("articles-container");
+
+    // Clear existing articles
+    articlesContainer.innerHTML = "";
+
+    // Add articles to the page
+    articles.forEach(function(article, index) {
+        var articleDiv = document.createElement("div");
+        articleDiv.classList.add("article");
+        articleDiv.innerHTML = "<h3>" + article.title + "</h3><p>By: " + article.name + " (" + article.email + ")<br>" + article.content + "</p>";
+        
+        // Add delete button for each article
+        var deleteButton = document.createElement("button");
+        deleteButton.textContent = "Delete";
+        deleteButton.addEventListener("click", function() {
+            deleteArticle(index);
+        });
+        articleDiv.appendChild(deleteButton);
+        
+        articlesContainer.appendChild(articleDiv);
+    });
+}
+
+// Function to delete an article
+function deleteArticle(index) {
+    var articles = JSON.parse(localStorage.getItem("articles")) || [];
+    
+    // Remove the article at the given index
+    articles.splice(index, 1);
+    
+    // Save updated articles to localStorage
+    localStorage.setItem("articles", JSON.stringify(articles));
+    
+    // Reload articles to update the page
+    loadArticles();
+}
+
+// Function to handle form submission
+document.getElementById("article-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    var name = document.getElementById("article-name").value;
+    var email = document.getElementById("article-email").value;
+    var title = document.getElementById("article-title").value;
+    var content = document.getElementById("article-content").value;
+
+    // Create article object
+    var article = {
+        name: name,
+        email: email,
+        title: title,
+        content: content
+    };
+
+    // Get existing articles from localStorage
+    var articles = JSON.parse(localStorage.getItem("articles")) || [];
+
+    // Add new article to the array
+    articles.push(article);
+
+    // Save updated articles to localStorage
+    localStorage.setItem("articles", JSON.stringify(articles));
+
+    // Load articles again to update the page
+    loadArticles();
+
+    // Clear form inputs
+    document.getElementById("article-form").reset();
+});
+
+</script>
+  <div id="corona">
+<h1>COVID-19</h1>
+    <p>
+      COVID-19, caused by the novel coronavirus SARS-CoV-2, is a respiratory illness that was first identified in December 2019 in Wuhan, China. Here's an overview of its symptoms, origin, cure, and prevention:
+
+<h2>Symptoms:</h2>
+
+Fever or chills
+Cough
+Shortness of breath or difficulty breathing
+Fatigue
+Muscle or body aches
+Headache
+New loss of taste or smell
+Sore throat
+Congestion or runny nose
+Nausea or vomiting
+Diarrhea
+Origin:
+COVID-19 is believed to have originated from a seafood market in Wuhan, China, where live animals were also sold. It is thought to have initially spread from animal-to-human transmission, and later evolved into human-to-human transmission.
+
+<h2>Cure:</h2>
+As of now, there is no cure for COVID-19. Treatment primarily involves managing symptoms and providing supportive care. In severe cases, hospitalized patients may require oxygen therapy or mechanical ventilation. Several drugs and therapies have been used experimentally to treat COVID-19, including antiviral medications, corticosteroids, and monoclonal antibodies, but their effectiveness varies.
+
+<h2>Prevention:</h2>
+
+Vaccination: COVID-19 vaccines have been developed and authorized for emergency use in many countries. Vaccination is one of the most effective ways to prevent COVID-19 and its severe complications.
+Mask-wearing: Wearing masks, especially in indoor or crowded settings, can help reduce the spread of respiratory droplets containing the virus.
+Hand hygiene: Regular handwashing with soap and water for at least 20 seconds or using hand sanitizer with at least 60% alcohol can help kill the virus.
+Social distancing: Maintaining physical distance from others, especially those who are sick or at higher risk of severe illness, can reduce the risk of transmission.
+Avoiding large gatherings: Avoiding crowded places and large gatherings can help limit the spread of the virus.
+Following public health guidelines: Following guidance from public health authorities and governments, such as quarantine and isolation measures, travel restrictions, and testing recommendations, can help control the spread of COVID-19.
+It's important to stay informed about the latest developments and guidelines from health authorities to protect yourself and others from COVID-19.
+
+</p>
+<button id="button1"  type="button">Consult a doctor</button>
+    
+  </div>
+ 
+ <div id="hiv">
+  <h1>Hiv/Aids</h1> <br>
+    <p>
+      HIV (Human Immunodeficiency Virus) is a virus that attacks the body's immune system, specifically targeting CD4 cells, which are crucial for fighting off infections. If left untreated, HIV can lead to AIDS (Acquired Immunodeficiency Syndrome), a condition where the immune system becomes severely compromised, making individuals susceptible to opportunistic infections and certain cancers. Here's an overview of symptoms, treatment, and prevention: <br>
+
+<h2>Symptoms of HIV/AIDS</h2> <br>
+1. Early Stage Symptoms: In the early stages of HIV infection, individuals may experience flu-like symptoms, including fever, fatigue, sore throat, swollen lymph nodes, and rash. However, not everyone experiences these symptoms, and they can often be mild or go unnoticed. <br>
+
+2. Asymptomatic Stage: After the initial symptoms, HIV can enter a latency period where there are no obvious symptoms, but the virus continues to replicate and damage the immune system. <br>
+ 
+3. Advanced Stage (AIDS): Without treatment, HIV can progress to AIDS. Symptoms of advanced HIV/AIDS include persistent fever, night sweats, chronic diarrhea, unintended weight loss, swollen lymph nodes, and opportunistic infections such as pneumonia, tuberculosis, and certain cancers. <br>
+
+<h2>Treatment (Cure)</h2> <br>
+While there is no cure for HIV/AIDS, antiretroviral therapy (ART) has revolutionized the management of the disease. ART involves taking a combination of medications daily to suppress the virus, allowing the immune system to recover and preventing progression to AIDS. With effective treatment, people with HIV can live long and healthy lives. <br>
+
+<h2>Prevention</h2> <br>
+1. Safe Sex: Practicing safe sex by using condoms can significantly reduce the risk of HIV transmission, especially for those with multiple sexual partners or whose partners' HIV status is unknown. <br>
+2. Needle Exchange Programs**: For individuals who inject drugs, using clean needles and syringes can help prevent HIV transmission. Needle exchange programs provide access to sterile injecting equipment, reducing the risk of infection. <br>
+3. Pre-Exposure Prophylaxis (PrEP)**: PrEP involves taking a daily medication (usually a combination of tenofovir and emtricitabine) to prevent HIV infection. It is highly effective when taken consistently and is recommended for individuals at high risk of HIV exposure. <br>
+4. Post-Exposure Prophylaxis (PEP)**: PEP involves taking antiretroviral medications within 72 hours of potential exposure to HIV to prevent infection. It is typically recommended for emergency situations such as needlestick injuries or unprotected sex with a partner known to have HIV. <br>
+
+In addition to these prevention methods, raising awareness, reducing stigma, and promoting HIV testing are essential in controlling the spread of the virus and ensuring early diagnosis and treatment. <br>
+</p>
+<button id="button1"  type="button">Consult a doctor</button>
+    
+  </div>
+ 
+
+ </div>
+ <div id="tv">
+  <h1>TV</h1>
+    <p>
+ It is type of diseasein in which is a bacterial infection caused by Mycobacterium tuberculosis. Here's information on tuberculosis, including symptoms, treatment, and precautions:
+
+      <h2>Symptoms of Tuberculosis (TB)</h2>
+      1. Cough: Persistent cough that lasts more than three weeks, sometimes producing bloody or discolored sputum.
+      2. Fatigue: Feeling tired and weak.
+      3. Weight Loss: Unintended weight loss.
+      4. Fever: Low-grade fever, especially in the afternoon or evening.
+      5. Night Sweats: Profuse sweating during sleep.
+      6. Loss of Appetite: Decreased appetite and sometimes nausea or vomiting.
+      7. Chest Pain: Pain or tightness in the chest, particularly when breathing or coughing.
+      8. Shortness of Breath: Difficulty breathing, especially with exertion.
+      
+      <h2>Treatment</h2>
+      Treatment for tuberculosis typically involves a course of antibiotics taken for several months. The most common medications used include isoniazid, rifampin, ethambutol, and pyrazinamide. Treatment regimens can vary based on factors such as the type of tuberculosis (drug-susceptible or drug-resistant), the severity of the infection, and the individual's overall health. It's crucial to complete the full course of treatment as prescribed by a healthcare provider to ensure the infection is fully eradicated and to prevent the development of drug resistance.
+      
+      <h2>Precautions</h2>
+      1. Isolation: People diagnosed with active tuberculosis should take precautions to prevent the spread of the disease to others. This may involve staying home from work or school until they are no longer contagious, usually after a few weeks of treatment.
+      2. Respiratory Etiquette: Covering the mouth and nose with a tissue or elbow when coughing or sneezing can help prevent the spread of tuberculosis bacteria.
+      3. Good Ventilation: Adequate ventilation in indoor spaces can help reduce the risk of tuberculosis transmission.
+      4. Personal Protective Equipment: Healthcare workers and others in close contact with individuals with active tuberculosis may need to use personal protective equipment, such as masks, to reduce the risk of infection.
+      5. Testing and Treatment: Early diagnosis and treatment of tuberculosis are essential for preventing its spread. Individuals who are at higher risk of tuberculosis exposure, such as healthcare workers, people living with HIV, and those in close contact with someone diagnosed with tuberculosis, should undergo regular testing.
+      
+      By following these precautions and seeking prompt medical attention if symptoms of tuberculosis develop, individuals can help prevent the spread of the disease and ensure timely treatment.
+</p>
+<button id="button1"  type="button">Consult a doctor</button>
+    
+  </div>
+ 
+
+ </div>
+ <div id="flu">
+  <h1>FLU</h1>
+    <p>
+      Influenza, commonly known as the flu, is a viral respiratory illness caused by influenza viruses. Here's information on flu symptoms, treatment, and precautions: <br>
+
+      <h2>Symptoms of the Flu</h2> <br>
+      1. Fever: Often high, typically above 100.4°F (38°C). <br>
+      2. Cough: Dry or productive cough.<br>
+      3. Sore Throat: Irritation or pain in the throat.<br>
+      4. Runny or Stuffy Nose: Nasal congestion or discharge.<br>
+      5. Body Aches: Muscular pain and soreness, often severe.<br>
+      6. Fatigue: Extreme tiredness and weakness.<br>
+      7. Headache: Dull or throbbing pain in the head.<br>
+      8. Chills: Shivering or feeling cold.<br>
+      9. Gastrointestinal Symptoms: Some individuals may experience nausea, vomiting, or diarrhea, though these symptoms are more common in children than adults.<br>
+      
+      <h2>Treatment</h2> <br>
+      1. Antiviral Medications: Prescription antiviral drugs like oseltamivir (Tamiflu), zanamivir (Relenza), and peramivir (Rapivab) can help reduce the severity and duration of flu symptoms if taken within the first 48 hours of symptom onset. These medications may also help prevent complications and shorten the duration of illness.<br>
+      2. Symptomatic Relief: Over-the-counter medications such as acetaminophen (Tylenol) or ibuprofen (Advil, Motrin) can help alleviate fever, body aches, and headaches. Cough suppressants and decongestants may also provide relief from cough and nasal congestion.<br>
+      3. Fluids and Rest: Drinking plenty of fluids and getting ample rest can help the body fight off the infection and recover more quickly.<br>
+      
+      <h2>Precautions</h2>
+      1. Vaccination: Annual flu vaccination is the most effective way to prevent influenza and its complications. The flu vaccine is recommended for everyone six months of age and older, with rare exceptions.<br>
+      2. Hand Hygiene: Wash hands frequently with soap and water for at least 20 seconds, especially after coughing, sneezing, or touching potentially contaminated surfaces.<br>
+      3. Respiratory Etiquette: Cover the mouth and nose with a tissue or elbow when coughing or sneezing to prevent the spread of respiratory droplets containing the virus.<br>
+      4. Stay Home When Sick: Individuals with flu-like symptoms should stay home from work, school, and other activities to prevent spreading the virus to others. It's essential to avoid close contact with others until at least 24 hours after the fever is gone without the use of fever-reducing medications.<br>
+      5. Avoid Close Contact: Try to avoid close contact with individuals who are sick with the flu to reduce the risk of transmission.<br>
+      6. Clean and Disinfect: Regularly clean and disinfect frequently touched surfaces and objects, such as doorknobs, light switches, and electronic devices, to prevent the spread of flu viruses.<br>
+      
+      By practicing these precautions and seeking prompt medical attention if flu symptoms worsen or complications arise, individuals can help protect themselves and others from influenza.<br>
+</p>
+<button id="button1"  type="button">Consult a doctor</button>
+    
+  </div>
+ 
+
+ </div>
+ <div id="cold">
+  <h1>COLD</h1>
+    
+      <p>Certainly! Here's information on the common cold, including symptoms, treatment, and precautions:</p>
+
+    <h2>Symptoms of the Common Cold </h2> <br>
+1. Sore Throat: Often the first sign of a cold, characterized by irritation or pain in the throat. <br>
+2. Runny or Stuffy Nose: Nasal congestion or discharge, with clear or sometimes yellowish mucus. <br>
+3. Cough: Dry or productive cough, which may worsen over time.<br>
+4. Sneezing: Frequent sneezing, often triggered by nasal congestion or irritation.<br>
+5. Fatigue: Feeling tired or lethargic, which can accompany other cold symptoms.<br>
+6. Mild Fever: Some individuals may experience a low-grade fever, particularly in children, though it's less common in adults.<br>
+7. Headache: Mild to moderate headache, often accompanied by sinus pressure or discomfort.<br>
+8. Body Aches: Generalized muscle aches or soreness, though typically less severe than with the flu.<br>
+
+<h2>Treatment </h2> <br>
+1. Symptomatic Relief: Over-the-counter medications such as acetaminophen (Tylenol) or ibuprofen (Advil, Motrin) can help alleviate fever, headache, and body aches. Decongestants and antihistamines may provide relief from nasal congestion and sneezing, though they may not be suitable for everyone, especially young children.<br>
+2. Saline Nasal Drops or Spray: Using saline nasal drops or sprays can help relieve nasal congestion and moisturize the nasal passages.<br>
+3. Stay Hydrated: Drinking plenty of fluids, such as water, herbal tea, or broth, can help loosen mucus and prevent dehydration.<br>
+4. Rest: Getting ample rest allows the body to focus its energy on fighting off the infection and promotes faster recovery.<br>
+5. Humidifier: Using a humidifier in the bedroom can help keep the air moist, which may ease congestion and soothe irritated nasal passages.<br>
+
+<h2>Precautions </h2><br>
+1. Hand Hygiene: Wash hands frequently with soap and water for at least 20 seconds, especially after coughing, sneezing, or touching potentially contaminated surfaces.<br>
+2. Respiratory Etiquette: Cover the mouth and nose with a tissue or elbow when coughing or sneezing to prevent the spread of respiratory droplets containing the virus.<br>
+3. Avoid Close Contact: Try to avoid close contact with individuals who have a cold to reduce the risk of transmission.<br>
+4. Clean and Disinfect: Regularly clean and disinfect frequently touched surfaces and objects, such as doorknobs, light switches, and electronic devices, to prevent the spread of cold viruses.<br>
+5. Stay Home When Sick: Individuals with cold symptoms should stay home from work, school, and other activities to prevent spreading the virus to others. It's essential to avoid close contact with others until symptoms improve and fever resolves.<br>
+
+By following these precautions and practicing good hygiene, individuals can help prevent the spread of the common cold and reduce the severity of symptoms if they do become infected.<br>
+</p>
+<button id="button1"  type="button">Consult a doctor</button>
+    
+  </div>
+ 
+  
+ </div>
+  <!-- Your existing content -->
+
+    <!-- Back to top button -->
+    <div id="back-to-top">
+      <a href="#nav">Back to Top</a>
+  </div>
+
+  <!-- Your existing scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js" integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js" integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+
+  <style>
+      /* Styling for the back to top button */
+      #back-to-top {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background-color: #0D9276;
+          color: white;
+          padding: 10px 20px;
+          border-radius: 5px;
+          display: none; /* Hide by default */
+          text-decoration: none;
+      }
+  </style>
+
+  <script>
+      // JavaScript to handle back to top functionality
+      const backToTopButton = document.getElementById('back-to-top');
+
+      // Show the button when user scrolls down
+      window.addEventListener('scroll', () => {
+          if (window.pageYOffset > 100) {
+              backToTopButton.style.display = 'block';
+          } else {
+              backToTopButton.style.display = 'none';
+          }
+      });
+
+      // Smooth scrolling when the button is clicked
+      backToTopButton.addEventListener('click', () => {
+          window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+          });
+      });
+  </script>
+
+ <footer>
+  <p>
+    &copy; 2024 ASAH all rights reserved
+  </p>
+</footer>
+ 
+
+ <script src="script.js"></script> 
+
+   <!-- Add your JavaScript file here if needed -->
+</body>
+
+</html>

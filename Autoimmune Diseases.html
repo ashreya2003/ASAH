@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autoimmune Diseases</title>
+  <link rel="stylesheet" href="Autoimmune Diseases.css"> <!-- Add your CSS file here -->
+</head>
+
+<body>
+  <header>
+    
+    <div>
+     <h1><center>Autoimmune Diseases</h1></center> 
+      <div class="dropdown">
+        <button class="dropbtn">Types</button>
+        <div class="dropdown-content">
+          <a href="#rheum">Rheumatoid arthritis (RA)</a>
+          <a href="#systemic">Systemic lupus erythematosus (SLE)</a>
+          <a href="#diab">Type 1 diabetes</a>
+          <a href="#mul">Multiple sclerosis (MS)</a>
+          <a href="#psoria">Psoriasis</a>
+        </div>
+      </div>
+
+    </div>
+  </header>
+  <main>
+    <section class="chatbox">
+      <section class="chat-window">
+        <article class="msg-container msg-remote" id="msg-0">
+          <div class="msg-box">
+            <img class="user-img" id="user-0" src="//gravatar.com/avatar/00034587632094500000000000000000?d=retro" />
+            <div class="flr">
+              <div class="messages">
+                <p class="msg" id="msg-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius, neque non tristique
+                  tincidunt, mauris nunc efficitur erat, elementum semper justo odio id nisi.
+                </p>
+              </div>
+              <span class="timestamp"><span class="username">Name</span>&bull;<span class="posttime">3 minutes
+                  ago</span></span>
+            </div>
+          </div>
+        </article>
+        <article class="msg-container msg-self" id="msg-0">
+          <div class="msg-box">
+            <div class="flr">
+              <div class="messages">
+                <p class="msg" id="msg-1">
+                  Lorem ipsum dolor sit amet
+                </p>
+                <p class="msg" id="msg-2">
+                  Praesent varius
+                </p>
+              </div>
+              <span class="timestamp"><span class="username">Name</span>&bull;<span class="posttime">2 minutes
+                  ago</span></span>
+            </div>
+            <img class="user-img" id="user-0" src="//gravatar.com/avatar/56234674574535734573000000000001?d=retro" />
+          </div>
+        </article>
+        <article class="msg-container msg-remote" id="msg-0">
+          <div class="msg-box">
+            <img class="user-img" id="user-0" src="//gravatar.com/avatar/002464562345234523523568978962?d=retro" />
+            <div class="flr">
+              <div class="messages">
+                <p class="msg" id="msg-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+              <span class="timestamp"><span class="username">Name</span>&bull;<span class="posttime">1 minute
+                  ago</span></span>
+            </div>
+          </div>
+        </article>
+        <article class="msg-container msg-remote" id="msg-0">
+          <div class="msg-box">
+            <img class="user-img" id="user-0" src="//gravatar.com/avatar/00034587632094500000000000000000?d=retro" />
+            <div class="flr">
+              <div class="messages">
+                <p class="msg" id="msg-0">
+                  Lorem ipsum dolor sit amet.
+                </p>
+              </div>
+              <span class="timestamp"><span class="username">Name</span>&bull;<span class="posttime">Now</span></span>
+            </div>
+          </div>
+        </article>
+        <article class="msg-container msg-self" id="msg-0">
+          <div class="msg-box">
+            <div class="flr">
+              <div class="messages">
+                <p class="msg" id="msg-1">
+                  Lorem ipsum
+                </p>
+              </div>
+              <span class="timestamp"><span class="username">Name</span>&bull;<span class="posttime">Now</span></span>
+            </div>
+            <img class="user-img" id="user-0" src="//gravatar.com/avatar/56234674574535734573000000000001?d=retro" />
+          </div>
+        </article>
+      </section>
+      <form class="chat-input" onsubmit="return false;">
+        <input type="text" autocomplete="on" placeholder="Type a message" />
+        <button>
+          <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+            <path fill="rgba(0,0,0,.38)"
+              d="M17,12L12,17V14H8V10H12V7L17,12M21,16.5C21,16.88 20.79,17.21 20.47,17.38L12.57,21.82C12.41,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L3.53,17.38C3.21,17.21 3,16.88 3,16.5V7.5C3,7.12 3.21,6.79 3.53,6.62L11.43,2.18C11.59,2.06 11.79,2 12,2C12.21,2 12.41,2.06 12.57,2.18L20.47,6.62C20.79,6.79 21,7.12 21,7.5V16.5M12,4.15L5,8.09V15.91L12,19.85L19,15.91V8.09L12,4.15Z" />
+          </svg>
+        </button>
+      </form>
+     </section>
+    <!-- Add more sections or content as needed -->
+  </main>
+  <style>
+    /* Style for article section */
+    #article-section {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #40A2E3;
+        color: #fff;
+    }
+
+    .article {
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        background-color: #f9f9f9;
+    }
+
+    .article h3 {
+        margin-top: 0;
+        color: #0D9276;
+    }
+
+    .article p {
+        margin-bottom: 0;
+        color: #1e3544;
+    }
+
+    /* Form styles */
+    #article-form {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    #article-form label {
+        display: block;
+        margin-bottom: 10px;
+        color: #40A2E3;
+    }
+
+    #article-form input[type="text"],
+    #article-form input[type="email"],
+    #article-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    #article-form input[type="submit"] {
+        background-color: #40A2E3;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    #article-form input[type="submit"]:hover {
+        background-color: #0D9276;
+    }
+</style>
+</head>
+<body>
+<div id="page1">
+<h1>ABOUT</h1>
+<center>
+    <h2>Autoimmune diseases are a broad category of disorders in which
+     the immune system mistakenly attacks the body's own cells, tissues, and organs. <br>
+     There are more than 80 different types of autoimmune diseases,<br>
+     each with its own set of causes, symptoms, and treatment approaches. </h2>
+</center>
+</div>
+<div id="article-section">
+<h2>Articles</h2>
+<div id="articles-container">
+    <!-- Articles will be dynamically added here -->
+</div>
+
+<!-- Add a form for users to submit articles -->
+<h2>Submit Your Article</h2>
+<form id="article-form">
+    <label for="article-name">Name:</label>
+    <input type="text" id="article-name" name="article-name" required><br>
+    <label for="article-email">Email:</label>
+    <input type="email" id="article-email" name="article-email" required><br>
+    <label for="article-title">Title:</label>
+    <input type="text" id="article-title" name="article-title" required><br>
+    <label for="article-content">Content:</label>
+    <textarea id="article-content" name="article-content" rows="4" cols="50" required></textarea><br>
+    <input type="submit" value="Submit">
+</form>
+</div>
+
+<script>
+// Load articles from localStorage on page load
+document.addEventListener("DOMContentLoaded", function() {
+    loadArticles();
+});
+
+// Function to load articles from localStorage
+function loadArticles() {
+    var articles = JSON.parse(localStorage.getItem("articles")) || [];
+    var articlesContainer = document.getElementById("articles-container");
+
+    // Clear existing articles
+    articlesContainer.innerHTML = "";
+
+    // Add articles to the page
+    articles.forEach(function(article) {
+        var articleDiv = document.createElement("div");
+        articleDiv.classList.add("article");
+        articleDiv.innerHTML = "<h3>" + article.title + "</h3><p>By: " + article.name + " (" + article.email + ")<br>" + article.content + "</p>";
+        articlesContainer.appendChild(articleDiv);
+    });
+}
+
+// Function to handle form submission
+document.getElementById("article-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    var name = document.getElementById("article-name").value;
+    var email = document.getElementById("article-email").value;
+    var title = document.getElementById("article-title").value;
+    var content = document.getElementById("article-content").value;
+
+    // Create article object
+    var article = {
+        name: name,
+        email: email,
+        title: title,
+        content: content
+    };
+
+    // Get existing articles from localStorage
+    var articles = JSON.parse(localStorage.getItem("articles")) || [];
+
+    // Add new article to the array
+    articles.push(article);
+
+    // Save updated articles to localStorage
+    localStorage.setItem("articles", JSON.stringify(articles));
+
+    // Load articles again to update the page
+    loadArticles();
+
+    // Clear form inputs
+    document.getElementById("article-form").reset();
+});
+</script>
+  <div id="rheum">
+<h1>Rheumatoid arthritis (RA)</h1>
+   <p>Rheumatoid arthritis (RA) is a chronic autoimmune disorder that primarily affects the joints, causing inflammation, pain, stiffness, and eventually joint damage and deformity. While there is no cure for RA, various treatments can help manage symptoms, slow disease progression, and improve quality of life. Here's an overview of RA symptoms, treatment options, and preventive measures: <br>
+
+    <h2>Symptoms of Rheumatoid Arthritis (RA)</h2> <br>
+    1. Joint pain and stiffness, often worse in the morning or after periods of inactivity.<br>
+    2. Swelling and tenderness in the affected joints.<br>
+    3. Fatigue, weakness, and low-grade fever.<br>
+    4. Joint deformities and loss of joint function over time.<br>
+    5. Rheumatoid nodules (firm lumps under the skin, usually near joints).<br>
+    6. In some cases, RA can affect other organs and systems, leading to complications such as heart problems, lung inflammation, and eye inflammation.<br>
+    
+    <h2>Treatment of Rheumatoid Arthritis (RA)</h2> <br>
+    1.Medications <br>
+       - Nonsteroidal anti-inflammatory drugs (NSAIDs) to relieve pain and inflammation.<br>
+       - Disease-modifying antirheumatic drugs (DMARDs) such as methotrexate, hydroxychloroquine, and sulfasalazine to slow disease progression and prevent joint damage.<br>
+       - Biologic agents, including TNF-alpha inhibitors, interleukin-6 (IL-6) inhibitors, and other targeted therapies, to suppress the immune system and reduce inflammation.<br>
+       - Corticosteroids to reduce inflammation and provide short-term relief of symptoms during flare-ups.<br>
+    
+    2.Physical therapy: Exercises and stretches to improve joint flexibility, strength, and function, as well as techniques to protect joints and conserve energy.<br>
+    
+    3.Occupational therapy: Techniques and adaptive equipment to assist with daily activities and reduce strain on affected joints.<br>
+    
+    4.Lifestyle modifications: <br>
+       - Regular exercise to maintain joint flexibility, muscle strength, and overall health.<br>
+       - Rest and joint protection during flare-ups.<br>
+       - Healthy diet rich in fruits, vegetables, whole grains, and omega-3 fatty acids, which may help reduce inflammation.<br>
+       - Smoking cessation, as smoking can worsen RA symptoms and increase the risk of complications.<br>
+    
+   <h2>Prevention of Rheumatoid Arthritis (RA)</h2> <br>
+    Unfortunately, there is no guaranteed way to prevent RA, as the exact cause is unknown and likely involves a combination of genetic, environmental, and immune factors. However, some strategies may help reduce the risk or delay the onset of RA:<br>
+    1.Maintain a healthy lifestyle: Eat a balanced diet, exercise regularly, maintain a healthy weight, and avoid smoking.<br>
+    2.Manage stress: Stress may exacerbate RA symptoms, so finding effective stress management techniques such as meditation, yoga, or relaxation exercises may be beneficial.<br>
+    3.Early diagnosis and treatment: If you experience joint pain, stiffness, or swelling, especially if it persists or worsens over time, seek medical evaluation promptly. Early diagnosis and treatment can help prevent joint damage and disability associated with RA.<br>
+    
+    Overall, managing RA involves a combination of medication, lifestyle modifications, and supportive therapies to control symptoms, improve joint function, and enhance quality of life. It's essential for individuals with RA to work closely with their healthcare providers to develop a personalized treatment plan tailored to their specific needs and preferences.</p><br>
+<button id="button1"  type="button">Consult a doctor</button>
+    
+  </div>
+ 
+ <div id="systemic">
+  <h1>Systemic Lupus Erythematosus (SLE)</h1>
+  Certainly! Here's the information about Systemic Lupus Erythematosus (SLE) with brief descriptions:
+
+ <h2> Symptoms of Systemic Lupus Erythematosus (SLE) </h2>
+  - Joint pain and stiffness: Pain and stiffness in multiple joints, particularly after periods of rest.
+  - Fatigue and weakness: Persistent tiredness and weakness, often interfering with daily activities.
+  - Butterfly-shaped rash on the face: Red or purple rash resembling the shape of a butterfly across the cheeks and nose.
+  - Fever: Low-grade fever, sometimes accompanied by chills.
+  - Sensitivity to sunlight: Skin sensitivity to sunlight, resulting in rashes or flare-ups.
+  - Raynaud's phenomenon: Fingers and toes turn white or blue in response to cold or stress, then red when warmed.
+  - Organ involvement: SLE can affect various organs, including the kidneys, heart, lungs, and brain, leading to complications.
+  
+  <h2>Treatment of Systemic Lupus Erythematosus (SLE)</h2>
+  - Medications: Treatment typically involves a combination of medications such as NSAIDs, antimalarial drugs, corticosteroids, immunosuppressants, and biologic agents to manage symptoms and suppress the immune system.
+  - Lifestyle modifications: Lifestyle changes like sun protection, stress management, regular exercise, and a balanced diet can help manage symptoms and improve overall health.
+  - Regular medical monitoring and follow-up: Patients with SLE require regular monitoring by healthcare providers to assess disease activity, adjust medications, and address any complications.
+  
+ <h2> Prevention of Systemic Lupus Erythematosus (SLE) </h2>
+  - Avoid prolonged sun exposure and use sunscreen: Sunlight can trigger flare-ups in individuals with SLE, so it's essential to protect the skin from UV rays.
+  - Maintain a healthy lifestyle: Eating a balanced diet, getting regular exercise, maintaining a healthy weight, and avoiding smoking can help reduce the risk of flare-ups and complications.
+  - Manage stress effectively: Stress can exacerbate symptoms of SLE, so finding healthy coping mechanisms such as relaxation techniques or therapy is important.
+  - Quit smoking if applicable: Smoking can worsen symptoms and increase the risk of complications in individuals with SLE, so quitting smoking is strongly recommended.
+</p>
+<button id="button1"  type="button">Consult a doctor</button>
+    
+  </div>
+ 
+
+ </div>
+ <div id="diab">
+  <h1>Type 1 diabetes</h1>
+  Type 1 diabetes is a chronic condition characterized by the immune system mistakenly attacking insulin-producing cells in the pancreas, leading to little to no insulin production. Here are the symptoms, treatment options, and prevention strategies for Type 1 diabetes:
+
+ <h2> Symptoms of Type 1 Diabetes:</h2>
+  - Increased thirst (polydipsia)
+  - Frequent urination (polyuria)
+  - Extreme hunger (polyphagia)
+  - Unexplained weight loss
+  - Fatigue and weakness
+  - Blurred vision
+  - Irritability and mood changes
+  - Bedwetting in children who previously didn't wet the bed during the night
+  
+  <h2>Treatment of Type 1 Diabetes:</h2>
+  - Insulin therapy: Individuals with Type 1 diabetes require lifelong insulin therapy to replace the insulin their bodies cannot produce. Insulin may be administered through injections or an insulin pump.
+  - Blood sugar monitoring: Regular monitoring of blood sugar levels helps individuals with Type 1 diabetes manage their condition effectively and adjust insulin doses as needed.
+  - Healthy diet: A balanced diet rich in fruits, vegetables, whole grains, lean proteins, and healthy fats can help stabilize blood sugar levels and manage weight.
+  - Regular exercise: Physical activity is important for managing blood sugar levels, improving insulin sensitivity, and maintaining overall health.
+  - Education and support: Proper education about diabetes management, including insulin administration, blood sugar monitoring, and meal planning, along with emotional support, can help individuals cope with the challenges of Type 1 diabetes.
+  
+ <h2>Prevention of Type 1 Diabetes:</h2>
+  - Currently, there are no known strategies to prevent Type 1 diabetes because the exact cause of the condition is not fully understood.
+  - Researchers are studying various factors that may contribute to the development of Type 1 diabetes, including genetics, environmental triggers, and autoimmune factors, but there are no proven methods to prevent the onset of the disease.
+  - However, some ongoing research focuses on identifying potential risk factors and developing interventions that may help delay or prevent Type 1 diabetes in high-risk individuals.
+  
+  It's important for individuals with Type 1 diabetes to work closely with healthcare providers to develop a personalized treatment plan that meets their specific needs and lifestyle. With proper management, people with Type 1 diabetes can lead active and fulfilling lives while minimizing the risk of complications associated with the condition.
+<button id="button1"  type="button">Consult a doctor</button>
+    
+  </div>
+ 
+
+ </div>
+ <div id="mul">
+  <h1>Multiple Sclerosis</h1>
+  It seems like you're referring to "multiple sclerosis" (MS), which is a chronic autoimmune disease that affects the central nervous system (CNS), including the brain and spinal cord. Here's information about multiple sclerosis, including its symptoms, treatment, and prevention:
+
+  <h2>Symptoms of Multiple Sclerosis (MS)</h2>
+  - Fatigue: A common symptom experienced by many individuals with MS, often unrelated to physical exertion.
+  - Numbness or weakness in one or more limbs: This symptom may occur on one side of the body or both, and it can affect walking or fine motor skills.
+  - Vision problems: Blurred or double vision, partial or complete loss of vision, and pain with eye movement are possible symptoms.
+  - Tingling or pain: Individuals with MS may experience sensations of tingling, itching, or pain in various parts of the body.
+  - Dizziness and vertigo: Some people with MS experience feelings of lightheadedness, dizziness, or spinning sensations.
+  - Difficulty with coordination and balance: MS can affect coordination and balance, leading to clumsiness or difficulty walking.
+  - Cognitive changes: MS can cause cognitive impairments such as difficulty concentrating, memory problems, and changes in judgment or reasoning.
+  - Emotional changes: Mood swings, depression, and anxiety are common emotional symptoms of MS.
+  - Bladder and bowel dysfunction: MS can affect bladder and bowel control, leading to urinary urgency, frequency, or incontinence, as well as constipation.
+  
+  <h2>Treatment of Multiple Sclerosis (MS)</h2>
+  - Disease-modifying therapies (DMTs): These medications help reduce the frequency and severity of MS relapses, slow disease progression, and manage symptoms.
+  - Symptomatic treatments: Medications and therapies are available to manage specific symptoms of MS, such as fatigue, muscle spasms, pain, bladder dysfunction, and cognitive changes.
+  - Rehabilitation therapies: Physical therapy, occupational therapy, and speech therapy can help individuals with MS improve mobility, strength, coordination, and communication skills.
+  - Supportive care: Psychological support, counseling, and support groups can provide emotional support and practical guidance for managing the challenges of living with MS.
+  
+  <h2>Prevention of Multiple Sclerosis (MS)</h2>
+  - Currently, there are no known methods to prevent MS because the exact cause of the disease is not fully understood.
+  - Research suggests that a combination of genetic, environmental, and immune system factors may contribute to the development of MS, but specific prevention strategies have not been identified.
+  - Some studies have suggested that maintaining a healthy lifestyle, including regular exercise, a balanced diet, and avoiding smoking, may help reduce the risk of developing MS or experiencing MS relapses.
+  
+  Overall, early diagnosis, appropriate medical treatment, and lifestyle modifications can help individuals with MS manage their symptoms, slow disease progression, and maintain a good quality of life. It's important for individuals with MS to work closely with healthcare providers to develop a personalized treatment plan tailored to their specific needs and preferences.
+<button id="button1"  type="button">Consult a doctor</button>
+    
+  </div>
+ 
+
+ </div>
+ <div id="psoria">
+  <h1>psoriasis</h1>
+  It seems like you're referring to "psoriasis," which is a chronic autoimmune condition that primarily affects the skin. Psoriasis speeds up the life cycle of skin cells, causing them to build up rapidly on the surface of the skin, leading to red, inflamed patches covered with silvery scales. Here's information about psoriasis, including its symptoms, treatment, and prevention:
+
+ <h2>Symptoms of Psoriasis</h2> 
+  - Red patches of skin: These patches are typically covered with thick, silvery scales and may appear on various parts of the body, including the elbows, knees, scalp, lower back, and nails.
+  - Itching and burning sensations: Psoriasis can cause itching, burning, or soreness in the affected areas, which can be mild to severe.
+  - Thickened or pitted nails: Psoriasis can affect the nails, causing changes such as pitting (small dents or depressions), thickening, discoloration, or separation from the nail bed.
+  - Dry, cracked skin: Psoriasis patches may become dry, cracked, and prone to bleeding, especially in areas of friction or trauma.
+  - Joint pain and swelling: Some individuals with psoriasis may develop psoriatic arthritis, a type of inflammatory arthritis that causes joint pain, stiffness, and swelling, particularly in the fingers, toes, wrists, knees, or ankles.
+  
+  <h2>Treatment of Psoriasis:</h2>
+  - Topical treatments: Creams, ointments, gels, foams, and shampoos containing corticosteroids, vitamin D analogs, retinoids, salicylic acid, or coal tar can help reduce inflammation, remove scales, and relieve itching.
+  - Phototherapy (light therapy): Exposure to ultraviolet (UV) light under controlled conditions can slow the growth of skin cells and reduce inflammation in psoriasis.
+  - Systemic medications: Oral or injectable medications, such as methotrexate, cyclosporine, acitretin, apremilast, or biologic agents, can help suppress the immune system and reduce inflammation in moderate to severe cases of psoriasis.
+  - Combination therapies: Some individuals may benefit from a combination of topical treatments, phototherapy, and systemic medications to manage their psoriasis symptoms effectively.
+  
+ <h2> Prevention of Psoriasis:</h2>
+  - While there's no known way to prevent psoriasis, certain lifestyle modifications may help reduce the frequency and severity of flare-ups:
+    - Avoid triggers: Identify and avoid triggers that worsen psoriasis symptoms, such as stress, infections, skin injuries, certain medications, and exposure to cold, dry weather or excessive sun exposure.
+    - Maintain a healthy lifestyle: Eat a balanced diet, exercise regularly, maintain a healthy weight, get adequate sleep, and avoid smoking and excessive alcohol consumption, as these factors can affect psoriasis symptoms and overall health.
+  
+  Overall, individuals with psoriasis should work closely with healthcare providers to develop a personalized treatment plan that addresses their specific needs and preferences. With proper management, most people with psoriasis can control their symptoms and maintain a good quality of life.
+<button id="button1"  type="button">Consult a doctor</button>
+    
+  </div>
+ 
+  
+ </div>
+  <!-- Your existing content -->
+
+    <!-- Back to top button -->
+    <div id="back-to-top">
+      <a href="#nav">Back to Top</a>
+  </div>
+
+  <!-- Your existing scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js" integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js" integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+
+  <style>
+      /* Styling for the back to top button */
+      #back-to-top {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background-color: #0D9276;
+          color: white;
+          padding: 10px 20px;
+          border-radius: 5px;
+          display: none; /* Hide by default */
+          text-decoration: none;
+      }
+  </style>
+
+  <script>
+      // JavaScript to handle back to top functionality
+      const backToTopButton = document.getElementById('back-to-top');
+
+      // Show the button when user scrolls down
+      window.addEventListener('scroll', () => {
+          if (window.pageYOffset > 100) {
+              backToTopButton.style.display = 'block';
+          } else {
+              backToTopButton.style.display = 'none';
+          }
+      });
+
+      // Smooth scrolling when the button is clicked
+      backToTopButton.addEventListener('click', () => {
+          window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+          });
+      });
+  </script>
+
+ <footer>
+  <p>
+    &copy; 2024 ASAH all rights reserved
+  </p>
+</footer>
+ 
+
+ <script src="script.js"></script> 
+
+   <!-- Add your JavaScript file here if needed -->
+</body>
+
+</html>

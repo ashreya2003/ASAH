@@ -1,0 +1,310 @@
+/* Reset default margin, padding, and box-sizing */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+/* Apply some basic styles to the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Adjust padding as needed */
+    background-color: #0D9276;
+}
+
+h1 {
+    text-align: center;
+}
+
+.chatbox {
+    max-width: 1350px; /* Set max-width instead of fixed width */
+    width: 100%; /* Make it responsive */
+    max-height: 520px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+    height: 100vh;
+    margin-left: auto; /* Push chatbox to the right */
+    margin-right: auto; /* Push chatbox to the left */
+}
+
+.chat-window {
+    flex: auto;
+    max-height: calc(100% - 60px);
+    background: #BBE2EC;
+    overflow: auto;
+}
+
+.chat-input {
+    flex: 0 0 auto;
+    height: 60px;
+    background: #BBE2EC;
+    border-top: 1px solid #2671ff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+}
+
+.chat-input input {
+    height: 59px;
+    line-height: 60px;
+    outline: 0 none;
+    border: none;
+    width: calc(100% - 60px);
+    color: rgb(7, 7, 7);
+    text-indent: 10px;
+    font-size: 12pt;
+    padding: 0;
+    background: #FFF6E9;
+}
+
+.chat-input button {
+    float: right;
+    outline: 0 none;
+    border: none;
+    background: rgba(255, 255, 255, .25);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 2px 0 0 0;
+    margin: 10px;
+    transition: all 0.15s ease-in-out;
+}
+
+.chat-input input[good]+button {
+    box-shadow: 0 0 2px rgba(0, 0, 0, .12), 0 2px 4px rgba(0, 0, 0, .24);
+    background: #2671ff;
+}
+
+.chat-input input[good]+button:hover {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.chat-input input[good]+button path {
+    fill: white;
+}
+
+.msg-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+.msg-box {
+    display: flex;
+    background: #5b5e6c;
+    padding: 10px 10px 0 10px;
+    border-radius: 0 6px 6px 0;
+    max-width: 80%;
+    width: auto;
+    float: left;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .12), 0 2px 4px rgba(0, 0, 0, .24);
+}
+
+.user-img {
+    display: inline-block;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background: #2671ff;
+    margin: 0 10px 10px 0;
+}
+
+.flr {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 50px);
+}
+
+.messages {
+    flex: 1 0 auto;
+}
+
+.msg {
+    display: inline-block;
+    font-size: 11pt;
+    line-height: 13pt;
+    color: rgba(255, 255, 255, .7);
+    margin: 0 0 4px 0;
+}
+
+.msg:first-of-type {
+    margin-top: 8px;
+}
+
+.timestamp {
+    color: rgba(0, 0, 0, .38);
+    font-size: 8pt;
+    margin-bottom: 10px;
+}
+
+.username {
+    margin-right: 3px;
+}
+
+.posttime {
+    margin-left: 3px;
+}
+
+.msg-self .msg-box {
+    border-radius: 6px 0 0 6px;
+    background: #2671ff;
+    float: right;
+}
+
+.msg-self .user-img {
+    margin: 0 0 10px 10px;
+}
+
+.msg-self .msg {
+    text-align: right;
+}
+
+.msg-self .timestamp {
+    text-align: right;
+}
+
+/* Style the dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the dropdown button */
+.dropbtn {
+    cursor: pointer;
+    background-color: #fafafa;
+    color: #0D9276;
+    padding: 12px 24px; /* Adjust padding as needed */
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Style the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0D9276;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px; /* Add border-radius for rounded corners */
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px; /* Adjust padding as needed */
+    text-decoration: none;
+    display: block;
+}
+
+/* Change background color on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown content when hovering over the dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .chatbox {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    footer {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Styles for individual sections */
+#lung, #breast, #colorectal, #Prostate, #cervical {
+    padding: 20px;
+    background-image: linear-gradient(to bottom, #ffffff, #40A2E3); /* Bluish to whitish gradient */
+    color: #333333; /* Text color */
+    border-radius: 10px; /* Rounded corners */
+    min-height: 100vh;
+}
+
+#lung p, #breast p, #colorectal p, #Prostate p, #cervical p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#lung h2, #breast h2, #colorectal h2, #Prostate h2,#cervical h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #0D9276; /* Heading color */
+}
+
+#lung ul, #breast ul, #colorectal ul, #Prostate ul, #cervical ul {
+    margin-bottom: 20px;
+}
+
+#lung ul li, #breast ul li, #tv ul li,  #Prostate ul li, #cervical ul li {
+    margin-bottom: 5px;
+}
+
+#backToTopBtn {
+    display: none; /* Initially hide the button */
+    position: fixed; /* Fixed position so it's always visible */
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    z-index: 99; /* Ensure it's above other elements */
+    padding: 10px; /* Adjust size */
+    background-color: #333; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#backToTopBtn:hover {
+    background-color: #555; /* Change background color on hover */
+}
+
+#button1 {
+    background-color: #fafafa;
+    color: #0D9276;
+    padding: 12px 24px; /* Adjust padding as needed */
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+/* styles.css */
+
+/* Style for the page container */
+#page1 {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+/* Style for the ABOUT section */
+#page1 h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#page1 h2 {
+    color: #666;
+    text-align: center;
+    line-height: 1.5;
+}
+
+footer {
+    background:#0D9276;
+    padding: 10px;
+    text-align: center;
+  }
