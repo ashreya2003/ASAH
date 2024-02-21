@@ -3,7 +3,7 @@
 Welcome to Asah! This webapp serves as a platform for doctors to connect, collaborate, and share knowledge within the medical community.
 
 ## Setup Instructions for Local Development
-To get started with the Doctor Community App, follow these steps:
+To get started with the ASAH, follow these steps:
 1. Clone this repository to your local machine.
 2. Navigate to the project directory .
 3.open index.html file on live server.
